@@ -70,7 +70,7 @@ figure.e2 figcaption {
 	white-space: nowrap;
 	color: rgba(245, 245, 245, 0.9);
 	opacity: 0.85;
-	font-size: 0.9em;
+	font-size: 0.85em;
 	background: rgba(0, 0, 0, 0);
 	-webkit-transition: all 0.7s ease;
 	transition: all 0.7s ease;
@@ -97,38 +97,22 @@ figure.e2:hover figcaption {
   padding:0;
   overflow: auto;
   background-color: #FFFFFF;
-/*  max-width: 90em; */
   font-family: Helvetica, Arial, Verdana, sans-serif;
   font-size: 15px;
+  display: flex;
+  flex-flow: row nowrap;
+  flex: auto;
+  align-items: center;    
 }
 
-#content2 {
-  top: 2em;
-  height: 100%;
-  position:relative;
-/*  overflow:auto; */
-  width:100%;
-}
+figure.e4 {flex: 1 1 4%;}
 
-#arrow_back2 {
-  position:absolute; 
-  left: 0px; 
-  top: 0px;
-}
+figure.e5 {flex: 1 1 90%;}
 
-figure.e3 {
-  display: inline-block;
-  position: relative;
-  width: 85%;
-  height: 85%;
-  left: 0px; 
-  top: 0px;  
-}
-
-figure.e3 figcaption {
-	text-align: center;
+figure.e5 figcaption {
+    text-align: center;
     font-size: 1em;
-    color: rgba(80, 80, 80, 0.7);;
+    color: rgba(80, 80, 80, 0.7);
 }
 
 @media only screen and (max-width: 800px) {
