@@ -1,0 +1,149 @@
+
+html, body {
+  height:100%;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background-color: #FFFFFF;
+/*  max-width: 90em; */
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  font-size: 15px;
+} 
+
+header, section {display: block;}
+
+header {
+  top: 0px;
+  position:fixed;
+  position:absolute;
+  height: 3em;
+  width:100%;
+}
+
+#text1 {
+  position: relative;
+  top: 1em;
+  left: 3em;  
+  font-size: 1.1em;
+  color: rgba(80, 80, 80, 0.7);
+}
+
+#Content {
+  top: 3em;
+  left: 3px;
+  height: 90%;
+  position:relative;
+  overflow:auto;
+  width:100%;
+}
+
+figure, figcaption {
+	margin: 0;
+    padding: 0;
+}
+
+figure img {
+    width: 100%;
+	display: block;
+}
+
+figure.e1, 
+figure.e2 {
+  overflow: hidden; 
+  display: inline-block;
+  position: relative;
+  padding: 3px;
+  width: 20%;
+  border: 0px;
+}
+
+.before::before, .after::after {
+  content: "\A";
+  white-space: pre;
+}
+
+figure.e1 figcaption, 
+figure.e2 figcaption {
+	position: absolute;
+	bottom: -3em;	
+	text-align: center;
+	white-space: nowrap;
+	color: rgba(245, 245, 245, 0.9);
+	opacity: 0.85;
+	font-size: 0.9em;
+	background: rgba(0, 0, 0, 0);
+	-webkit-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+    width: 0;
+	left: 50%;
+}
+
+figure.e1 figcaption {line-height: 3em;}
+figure.e2 figcaption {line-height: 1.7em;}
+
+figure.e1:focus figcaption,
+figure.e1:hover figcaption,
+figure.e2:focus figcaption,
+figure.e2:hover figcaption {
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.35);
+}
+
+#body2 {
+  height:100%;
+  margin:0;
+  padding:0;
+  overflow: auto;
+  background-color: #FFFFFF;
+/*  max-width: 90em; */
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  font-size: 15px;
+}
+
+#content2 {
+  top: 2em;
+  height: 100%;
+  position:relative;
+/*  overflow:auto; */
+  width:100%;
+}
+
+#arrow_back2 {
+  position:absolute; 
+  left: 0px; 
+  top: 0px;
+}
+
+figure.e3 {
+  display: inline-block;
+  position: relative;
+  width: 85%;
+  height: 85%;
+  left: 0px; 
+  top: 0px;  
+}
+
+figure.e3 figcaption {
+	text-align: center;
+    font-size: 1em;
+    color: rgba(80, 80, 80, 0.7);;
+}
+
+@media only screen and (max-width: 800px) {
+	body {
+		width: 100%;
+		margin: 0;
+		padding: 1%;
+	}
+	figure.einzel {
+		width: 48%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	figure.einzel {
+		width: 100%;
+	}
+}
