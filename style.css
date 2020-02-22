@@ -52,8 +52,9 @@ figure.e2 {
   overflow: hidden; 
   display: inline-block;
   position: relative;
-  padding: 3px;
-  width: 20%;
+  padding: 0px;
+  width: 23%;
+  margin: 0.5%;
   border: 0px;
 }
 
@@ -105,9 +106,15 @@ figure.e2:hover figcaption {
   align-items: center;    
 }
 
-figure.e4 {flex: 1 1 4%;}
+figure.e4 {
+  flex: 1 1 4%;
+  margin: 0.5%;
+}
 
-figure.e5 {flex: 1 1 90%;}
+figure.e5 {
+  flex: 1 1 90%;
+  margin: 0.5%;
+}
 
 figure.e5 figcaption {
     text-align: center;
