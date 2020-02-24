@@ -43,8 +43,8 @@ figure, figcaption {
 }
 
 figure img {
-    width: 100%;
 	display: block;
+    width: 100%; 
 }
 
 figure.e1, 
@@ -103,17 +103,13 @@ figure.e2:hover figcaption {
   display: flex;
   flex-flow: row nowrap;
   flex: auto;
-  align-items: center;    
+  align-items: center;
 }
 
-figure.e4 {
-  flex: 1 1 4%;
-  margin: 0.5%;
-}
-
-figure.e5 {
-  flex: 1 1 90%;
-  margin: 0.5%;
+#offs {
+    width = 1;
+    height = 1;
+    background: #FFFFFF;
 }
 
 figure.e5 figcaption {
