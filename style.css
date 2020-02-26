@@ -4,8 +4,7 @@ html, body {
   margin:0;
   padding:0;
   overflow:hidden;
-  background-color: #FFFFFF;
-/*  max-width: 90em; */
+  background-color: rgba(10, 10, 10, 1);
   font-family: Helvetica, Arial, Verdana, sans-serif;
   font-size: 15px;
 } 
@@ -25,7 +24,7 @@ header {
   top: 1em;
   left: 3em;  
   font-size: 1.1em;
-  color: rgba(80, 80, 80, 0.7);
+  color: rgba(180, 180, 180, 0.7);
 }
 
 #Content {
@@ -53,8 +52,8 @@ figure.e2 {
   display: inline-block;
   position: relative;
   padding: 0px;
-  width: 23%;
-  margin: 0.5%;
+  width: 24%;
+  margin: 0.3%;
   border: 0px;
 }
 
@@ -119,18 +118,14 @@ figure.e5 figcaption {
 }
 
 @media only screen and (max-width: 800px) {
-	body {
-		width: 100%;
-		margin: 0;
-		padding: 1%;
-	}
-	figure.einzel {
+	figure.e1, figure.e2 {
 		width: 48%;
 	}
 }
 
 @media only screen and (max-width: 600px) {
-	figure.einzel {
-		width: 100%;
+	figure.e1, figure.e2 {
+		width: 98%;
+		margin: 0.7%;
 	}
 }
