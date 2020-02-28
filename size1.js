@@ -21,7 +21,9 @@ function xtri() {
     return Math.round((r * 80) + 10) + '%';
 }
 
-var bgImg = ["jpeg_3/075_maeander_Kachel.jpg", "jpeg_3/075_maeander.jpg",
+var bgImg = [ "jpeg_3/073_prinzipien_am_morgen_Kachel.jpg", "jpeg_3/073_prinzipien_am_morgen.jpg",
+    "jpeg_3/074_t_strom_Kachel.jpg", "jpeg_3/074_t_strom.jpg",
+    "jpeg_3/075_maeander_Kachel.jpg", "jpeg_3/075_maeander.jpg",
     "jpeg_3/076_w_metaphysik_Kachel.jpg", "jpeg_3/076_w_metaphysik.jpg",
     "jpeg_3/077_strauss_voll_wuensche_Kachel.jpg", "jpeg_3/077_strauss_voll_wuensche.jpg",
     "jpeg_3/078_kompendium_der_wuensche_Kachel.jpg", "jpeg_3/078_kompendium_der_wuensche.jpg",
@@ -35,16 +37,18 @@ var bgImg = ["jpeg_3/075_maeander_Kachel.jpg", "jpeg_3/075_maeander.jpg",
     "jpeg_3/088_monderfindung_Kachel.jpg","jpeg_3/088_monderfindung.jpg",
     "jpeg_3/089_gluecksfuegung_Kachel.jpg","jpeg_3/089_gluecksfuegung.jpg",
     "jpeg_3/090_das_b_vom_h_Kachel.jpg","jpeg_3/090_das_b_vom_h.jpg",
-    "jpeg_3/091_w_wahrheit_Kachel.jpg","jpeg_3/091_w_wahrheit.jpg"]
+    "jpeg_3/091_w_wahrheit_Kachel.jpg","jpeg_3/091_w_wahrheit.jpg"];
     
-function getImg() {
-  return "url(" + bgImg[ Math.floor(Math.random() * Math.floor(bgImg.length)) ] + ")";
-}
-
-function init() {  
-    document.getElementById('text01').style.backgroundImage = getImg();
+function init() {
+    var a;
+    var b = Math.floor(Math.random() * Math.floor(bgImg.length));
+    while (1) {
+        a = Math.floor(Math.random() * Math.floor(bgImg.length));
+        if (a != b) break;
+    }
+    document.getElementById('text01').style.backgroundImage = "url(" + bgImg[a] + ")";
+    document.getElementById('text02').style.backgroundImage = "url(" + bgImg[b] + ")";
     document.getElementById('text01').style.backgroundPosition = xtri() + ' ' + xtri();
-    document.getElementById('text02').style.backgroundImage = getImg();
     document.getElementById('text02').style.backgroundPosition = xtri() + ' ' + xtri();
-    setSize1()
+    setSize1();
 }
