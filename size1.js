@@ -41,9 +41,9 @@ var bgImg = [ "jpeg_3/073_prinzipien_am_morgen_Kachel.jpg", "jpeg_3/073_prinzipi
     
 function init() {
     var a;
-    var b = Math.floor(Math.random() * Math.floor(bgImg.length));
+    var b = Math.floor(Math.random() * bgImg.length);
     while (1) {
-        a = Math.floor(Math.random() * Math.floor(bgImg.length));
+        a = Math.floor(Math.random() * bgImg.length);
         if (a != b) break;
     }
     document.getElementById('text01').style.backgroundImage = "url(" + bgImg[a] + ")";
