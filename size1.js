@@ -1,9 +1,9 @@
 
 window.addEventListener('resize', setSize1);
 
+
 function setSize1() {
     var h = window.innerHeight;
-/*    window.alert(h); */
     var h1 = (h * 0.08) + 'px';
     var h2 = (h * 0.22) + 'px';
     var f = ((h / 800.0) * 100) + '%';
@@ -38,6 +38,7 @@ var bgImg = [ "jpeg_3/073_prinzipien_am_morgen_Kachel.jpg", "jpeg_3/073_prinzipi
     "jpeg_3/089_gluecksfuegung_Kachel.jpg","jpeg_3/089_gluecksfuegung.jpg",
     "jpeg_3/090_das_b_vom_h_Kachel.jpg","jpeg_3/090_das_b_vom_h.jpg",
     "jpeg_3/091_w_wahrheit_Kachel.jpg","jpeg_3/091_w_wahrheit.jpg"];
+    
     
 function init() {
     var a;
