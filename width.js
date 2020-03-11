@@ -11,8 +11,8 @@ function setSize() {
     else { 
         document.getElementById('offs').style.width = 0;
     }
-    h = w * 0.033;
-    w = w * 0.9;
+    h = w * 0.025;
+    w = w * 0.925;
     document.getElementById('i1').style.width = h; 
     document.getElementById('i2').style.width = h;
     document.getElementById('i3').style.width = w;

@@ -52,8 +52,10 @@ figure.e2 {
   display: inline-block;
   position: relative;
   padding: 0px;
-  width: 24%;
-  margin: 0.3%;
+/*  width: 24%;
+  margin: 0.3%; */
+  width: 22%;
+  margin: 0.8%;  
   border: 0px;
 }
 
